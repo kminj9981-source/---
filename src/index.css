@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans KR", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-green: #2D5A27;
+  --color-brand-emerald: #10B981;
+}
+
+:root {
+  --brand-green: #2D5A27;
+}
+
+body {
+  @apply font-sans text-stone-800 bg-white;
+}
+
+.glass-morphism {
+  @apply bg-white/80 backdrop-blur-md border border-white/20;
+}
+
+.section-padding {
+  @apply py-20 px-6 md:px-12 lg:px-24;
+}
+
+.heading-lg {
+  @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight;
+}
+
+.btn-primary {
+  @apply bg-brand-green text-white px-8 py-3 rounded-full font-medium transition-all hover:opacity-90 active:scale-95;
+}
+
+.btn-outline {
+  @apply border-2 border-brand-green text-brand-green px-8 py-3 rounded-full font-medium transition-all hover:bg-brand-green hover:text-white active:scale-95;
+}
